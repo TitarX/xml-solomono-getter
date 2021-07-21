@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<settings>
+  <mainForm>
+    <location>
+      <x>496</x>
+      <y>181</y>
+    </location>
+  </mainForm>
+  <fileDialog>
+    <urlListFile>
+      <initialDirectory>D:\Downloading\Video\Movies\Serials\Moonlighting</initialDirectory>
+    </urlListFile>
+    <csvFile>
+      <initialDirectory>F:\!</initialDirectory>
+    </csvFile>
+  </fileDialog>
+</settings>

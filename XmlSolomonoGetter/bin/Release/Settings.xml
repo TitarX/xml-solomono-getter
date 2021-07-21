@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<settings>
+  <mainForm>
+    <location>
+      <x>452</x>
+      <y>130</y>
+    </location>
+  </mainForm>
+  <fileDialog>
+    <urlListFile>
+      <initialDirectory />
+    </urlListFile>
+    <csvFile>
+      <initialDirectory />
+    </csvFile>
+  </fileDialog>
+</settings>

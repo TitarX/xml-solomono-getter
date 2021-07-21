@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema">
+	<element name="data">
+		<complexType mixed="false">
+			<sequence>
+				<element name="host" type="string" minOccurs="1" maxOccurs="1" />
+				<element name="index" minOccurs="1" maxOccurs="1">
+					<complexType mixed="true">
+						<attribute name="date">
+							<simpleType>
+								<restriction base="string">
+									<pattern value="((([1-9])|([1-2][0-9])|(3[0-1]))\.((0[1-9])|(1[0-2]))\.20[1-9][2-9])|-" />
+								</restriction>
+							</simpleType>
+						</attribute>
+					</complexType>
+				</element>
+				<element name="mr" type="int" minOccurs="1" maxOccurs="1" />
+				<element name="ip" type="int" minOccurs="1" maxOccurs="1" />
+				<element name="hin" minOccurs="1" maxOccurs="1">
+					<complexType mixed="true">
+						<attribute name="l1" type="int" />
+						<attribute name="l2" type="int" />
+						<attribute name="l3" type="int" />
+						<attribute name="l4" type="int" />
+					</complexType>
+				</element>
+				<element name="din" minOccurs="1" maxOccurs="1">
+					<complexType mixed="true">
+						<attribute name="l1" type="int" />
+						<attribute name="l2" type="int" />
+						<attribute name="l3" type="int" />
+						<attribute name="l4" type="int" />
+					</complexType>
+				</element>
+				<element name="hout" minOccurs="1" maxOccurs="1">
+					<complexType mixed="true">
+						<attribute name="l1" type="int" />
+						<attribute name="l2" type="int" />
+						<attribute name="l3" type="int" />
+						<attribute name="l4" type="int" />
+					</complexType>
+				</element>
+				<element name="dout" type="int" minOccurs="1" maxOccurs="1" />
+				<element name="anchors" type=" int" minOccurs="1" maxOccurs="1" />
+				<element name="anchors_out" type="int" minOccurs="1" maxOccurs="1" />
+				<element name="igood">
+					<simpleType>
+						<restriction base="string">
+							<pattern value="[0-9]+/[0-9]+" />
+						</restriction>
+					</simpleType>
+				</element>
+			</sequence>
+		</complexType>
+	</element>
+</schema>
